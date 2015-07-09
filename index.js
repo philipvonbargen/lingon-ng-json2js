@@ -10,7 +10,7 @@ var TEMPLATE = '(function(module) {\n' +
   '    module = angular.module(\'%s\', []);\n' +
   '  }\n' +
   '  module.run([\'$cacheFactory\', function($cacheFactory) {\n' +
-  '    $cacheFactory(\'%s\').put(\'%s\',\n      %s);\n' +
+  '    ($cacheFactory.get(\'%s\') || $cacheFactory(\'%s\')).put(\'%s\',\n      %s);\n' +
   '  }]);\n' +
   '})();\n';
 
@@ -54,7 +54,7 @@ module.exports = function(options) {
   function generateModuleDeclaration(fileUrl, contents, options) {
     var escapedContent = escapeContent(fileUrl, contents);
     if(escapedContent) {
-      return util.format(TEMPLATE, options.moduleName, options.moduleName, options.moduleName, fileUrl, escapedContent);
+      return util.format(TEMPLATE, options.moduleName, options.moduleName, options.moduleName, options.moduleName, fileUrl, escapedContent);
     } else {
       return '/* Invalid JSON syntax in "' + fileUrl + '", skipping content. */\n';
     }

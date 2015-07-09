@@ -1,6 +1,6 @@
 {
   "name": "lingon-ng-json2js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Lingon plugin which generates AngularJS modules, which pre-load your JSON files into a $cacheFactory.",
   "keywords": [
     "lingon",
