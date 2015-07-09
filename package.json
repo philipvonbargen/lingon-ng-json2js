@@ -1,0 +1,46 @@
+{
+  "name": "lingon-ng-json2js",
+  "version": "0.0.1",
+  "description": "A Lingon plugin which generates AngularJS modules, which pre-load your JSON files into a $cacheFactory.",
+  "keywords": [
+    "lingon",
+    "lingonplugin",
+    "ng-json2js",
+    "angular",
+    "json2js",
+    "angularjs"
+  ],
+  "homepage": "https://github.com/philipvonbargen/lingon-ng-json2js",
+  "bugs": "https://github.com/philipvonbargen/lingon-ng-json2js/issues",
+  "author": {
+    "name": "Philip von Bargen",
+    "email": "philip@philipvonbargen.de",
+    "url": "https://github.com/philipvonbargen"
+  },
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/philipvonbargen/lingon-ng-json2js.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "gulp-util": "~3.0.6",
+    "map-stream": "~0.0.6"
+  },
+  "devDependencies": {
+    "mocha": "~2.2.5",
+    "should": "~7.0.1",
+    "event-stream": "~3.3.1"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
